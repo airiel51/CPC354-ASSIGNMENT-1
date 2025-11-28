@@ -37,8 +37,7 @@ window.onload = function init() {
     gl.viewport(0, 0, canvas.width, canvas.height);
     
     // --- BACKGROUND COLOR SETTING ---
-    // Set to Opaque Black (Red=0, Green=0, Blue=0, Alpha=1.0)
-    // This makes the TVX background different from the page background.
+    // Set to Opaque Black
     gl.clearColor(0.0, 0.0, 0.0, 1.0); 
     
     gl.enable(gl.DEPTH_TEST);

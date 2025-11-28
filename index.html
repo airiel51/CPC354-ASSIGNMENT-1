@@ -21,7 +21,7 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
             border-radius: 4px; 
             margin-top: 20px;
-            border: 2px solid rgba(255,255,255,0.1); /* Subtle border */
+            border: 2px solid rgba(255,255,255,0.1); 
         }
 
         #ui-container {
@@ -29,7 +29,8 @@
             padding: 20px; 
             border-radius: 8px; 
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            width: 512px; 
+            /* Increased width to match new canvas size */
+            width: 800px; 
             margin-top: 20px;
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -103,7 +104,6 @@
     <div id="ui-container">
         <div class="control-group">
             <label for="colorPicker">Logo Color</label>
-            <!-- Gold logo color -->
             <input type="color" id="colorPicker" value="#ffcc00">
         </div>
         
@@ -127,7 +127,8 @@
         </div>
     </div>
 
-    <canvas id="gl-canvas" width="512" height="512">
+    <!-- Increased Canvas Size to 800x600 -->
+    <canvas id="gl-canvas" width="800" height="600">
         Oops ... your browser doesn't support the HTML5 canvas element
     </canvas>
 
